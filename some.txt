@@ -1,0 +1,60 @@
+/* Box model of css every thing in the web is a box
+id a div have 600px and 300px width then i can change this if change this
+the nigboring is push away from the div box box have a border it has length solid has 3px value
+the blue area not change by changing border we spacify padding to give a space between border and content
+we can add margin its a buffer zone between corent element and other element it give little space between elements
+ block elements block other not to enter in the same line with inline element you can't change width and height but you can change in block elements
+ you can change display property to inline and other types
+ in inline you can't change width and height if you want to be inline and block at same time yopu have inline-block
+ here you can change width and height and it acts as inline choose images as inline elements
+ none get ride of the element when display:none
+ visibility:hidden
+ it disappears actualy that eleemnts are there */
+
+/* Now we talk about css positioning
+in html you can do that also content is everything  */
+
+2.order comes From code
+you write the order in html you choose that
+3. Children sits on parent
+<div>
+<h1>jdfjdj</h1>
+</div>
+h1 sits on div so you can see that elements
+
+position
+++++++++
+static
+all html is static in default
+without changing position
+Relative
+
+in this case we provide relative postion to original position
+it pushs to some pixels the aounds from its previous position
+doing this others not move so if if we nove somnetime it sits on some other elements
+moving relative to where the image use to be
+
+apsalute positioning
+++++++++++++++++++++
+if you want position this way then you need to a parent other then body then you need to set it relative
+Absalute positioning is positio relative to parents in most case it will div or body tags
+right:30px; means it move 30px to left by 30px from the most rigt corner
+fixed
++++++
+if you used this it fixed there when scrolling it not move it stay there it usefull for nave and side bar
+text-align
+not work for block with width
++++++++++
+work only on inline block or full width block element use oly parent continer
+auto centers
+for horzonytal margin top right bottom left 0 auto 0 auto
+
+rem ignores parents fontsize
+
+
+clear is used to not to float some parent
+ex)
+float:left;
+clear:left;
+then it cancels out
+only use float to wrap around the text not use for positioning
