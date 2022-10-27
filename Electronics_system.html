@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/Electronics.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Electronics systems</title>
+  </head>
+  <body>
+    <div class="Introduction">
+    <h1 class="Cent">Introductions</h1>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <p class="Intro">
+        Here I am going to explain about electronics. Mathematics is a tool to decribe the physical world by building models. Any mathematical model is valid as long as it is self consistent but in physics it must meet the experiments.
+        What are the equation that describe electrical behaviour? It is maxwell's equation right. Before that we need to understand the maths such as the divergents and curl. 
+        Below is the equations that describe electrical systems.
+    </p>
+    <p>
+            \[ \vec{\nabla} \cdot\ \vec{D} = \rho \]
+            \[ \vec{\nabla} \cdot\ \vec{B} = 0 \]
+            \[ \vec{\nabla} \times\ \vec{E} + \frac{\partial \vec{B}}{\partial t} = 0 \]
+            \[ \vec{\nabla} \times\ \vec{H} - \frac{\partial \vec{D}}{\partial t} = \vec{J} \]
+    </p>
+    <!-- <p>
+        These are Maxwell's equations that discribe the electrical systems. All of the above equations are associated with vector field.
+        the divergents tell us how much a point bleeds out. The forml defenition is 
+      \[\nabla \cdot \vec{F} = \lim_{A \to 0} \frac {\oint_{S} F \cdot \vec{dr}}{A}\]
+      We calculate how much it fluid out througha closed loop s then we divide by Area to normalise in the limiting case it become a properties of a point
+        
+    </p> -->
+    <p class="Intro">
+      Thes equations are very complex and calculating a simple circuit with these take so much time. Also it very hard to do. So we only do these for some special cases. First one is 
+      the dimension of the circuit much less than the wave length of intrest. ie \(D<<\lambda\). This means the propagation occure instently. So there is no delay. In this we can assume the speed of light is \(\infty\).
+      In this case The equation can reduced to.
+       \[\vec{\nabla} \times \vec{B} = \mu_{0} j + \frac{1}{c^2} \frac{\partial E}{\partial t} \]
+       if we assume \(c\to\infty\) then this become
+       \[\vec{\nabla} \times \vec{B} = \mu_{0} j\]
+       Taking div in both side give
+       \[\vec{\nabla} \cdot \vec{\nabla} \times \vec{B} =\vec{\nabla} \cdot \mu_{0} j\]
+       the divergence of curl is zero so the euation become
+       \[\vec{\nabla} \cdot j = 0\]
+       This means there is no accumilation of charge. The other case is treating charge as continuous value rather then discrete. In this we don't look at individual electrons. 
+       It like an hydrology analagy because in that we don't think of single water molecules that same applay to electonics also.
+    </p>
+    <h2 class="Cent">Current</h2>
+    <p class="Intro">
+
+    </p>
+  </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
